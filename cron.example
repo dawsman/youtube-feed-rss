@@ -1,0 +1,5 @@
+# Example: Daily sync cron job
+# Add to crontab with: crontab -e
+
+# Sync videos and regenerate feeds at 8 AM daily
+0 8 * * * cd /path/to/youtube-feed-rss && python feed.py sync && python feed.py generate
